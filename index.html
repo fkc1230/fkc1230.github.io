@@ -2,40 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>查看作业</title>
+    <title>Web基础</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            height: 100%;
+        }
+        .box1 {
+            height: 100px;
+            width: 100%;
+            border: 1px solid turquoise;
+            background-color:turquoise;
+            font-size: 35px;
+            text-align: center;
+            float: left;
+        }
+        .box2{
+            width: 300px;
+            height:635px;
+            background-color: turquoise;
+            float: left;
+        }
+        ul{
+            list-style: none;
+            font-size: 30px;
+            text-align: center;
+        }
+        ul>li:hover{
+            background-color: white;
+        }
+        .box3{
+            height: 635px;
+            width: calc(100% - 300px);
+            float: left;
+
+        }
+        .box4{
+            font-size: 30px;
+            position: absolute;
+            left:400px;
+            top:150px;
+        }
+        .box5{
+            height: 600px;
+            width: 600px;
+            float: right;
+        }
+        .box6{
+            font-size: 30px;
+            position: absolute;
+            left: 300px;
+            top: 400px;
+        }
+    </style>
 </head>
 <body>
-<h1 align="center" >查看作业</h1>
-<br/>
-<br/>
-
-<img src="qrCode.jpg"  height="200" width="200"  border="1" align="right" />
-
-<table width="400" height="400" align="center" border="1" cellspacing="0">
-    <tr>
-        <td><a href="第1次作业.html"  target="fkc" >第1次作业</a></td>
-        <td><a href="第2次作业.html" target="fkc">第2次作业</a></td>
-        <td><a href="第3次作业.html" target="fkc" >第3次作业</a></td>
-        <td><a href="第4次作业.html" target="fkc" >第4次作业</a></td>
-    </tr>
-    <tr>
-        <td><a href="第5次作业.html"  target="fkc">第5次作业</a></td>
-        <td><a href="第6次作业.html" target="fkc">第6次作业</a></td>
-        <td><a href="第7次作业.html" target="fkc">第7次作业</a></td>
-        <td><a>第8次作业</a></td>
-    </tr>
-    <tr>
-        <td colspan="4" rowspan="2"><iframe src="" width="500" height="400" name="fkc" > </iframe></td>
-    </tr>
-    <tr>
-    </tr>
-</table>
-<ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
+<div class="box1">Web基础课程作业</div>
+<div class="box2">
+    <ul>
+        课程作业
+        <li><a href="第1次作业.html">第一次作业</a></li>
+        <li><a href="第2次作业.html">第二次作业</a></li>
+        <li><a href="第3次作业.html">第三次作业</a></li>
+        <li><a href="第4次作业.html">第四次作业</a></li>
+        <li><a href="第5次作业.html">第五次作业</a></li>
+        <li><a href="第6次作业.html">第六次作业</a></li>
+        <li><a href="第7次作业.html">第七次作业</a></li>
+        <li><a href="第8次作业.html">第八次作业</a></li>
+    </ul>
+</div>
+<div class="box3">
+    <span class="box4"><a href="期末作业.html">期末作业</a></span>
+    <span class="box6">二维码—————————————></span>
+    <div class="box5">
+        <img src="qrCode.jpg">
+    </div>
+</div>
 </body>
 </html>
